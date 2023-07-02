@@ -1,0 +1,145 @@
+.pokemon-card {
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0;
+}
+
+/* Custom Search Box Styles */
+.custom-search-input {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #f5f5f5;
+  color: #333;
+  font-size: 16px;
+  padding-left: 40px;
+}
+
+.custom-search-input:focus {
+  outline: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+}
+
+.searchbox_wrapper {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.pokemon-icon img {
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  width: 20px;
+
+  pointer-events: none;
+}
+
+.pokemon-icon {
+  display: flex;
+  align-items: center;
+}
+
+.custom-search-input[type="number"]::-webkit-inner-spin-button,
+.custom-search-input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.card-container {
+  position: relative;
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card-image:hover {
+  transform: scale(1.1);
+}
+
+.popup-card {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 300px;
+  height: 200px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0s linear 0.3s;
+  z-index: 1;
+}
+
+.card-container:hover .popup-card {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 999;
+}
+
+.next-image-arrow {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  color: #ffffff;
+  font-size: 24px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0s linear 0.3s;
+}
+
+.card-container:hover .next-image-arrow {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.next-image-arrow:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal-description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.subimg_wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.single_sub_img {
+  cursor: pointer;
+}
+
+.imagedata_wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.text_bold{
+  font-weight: bold;
+}
